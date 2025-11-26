@@ -1,18 +1,12 @@
-## Getting Started
+Java Student Information System code sample
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Description:
+Student Loader - Loads students details along with their assigned majors and courses.
 
-## Folder Structure
+Structure: 
+- Model classes (Student, Major, Course)
+- JDBC/OJDBC-style stubs (non-functional for demo only)
+- Mock data loader methods (functional for demo)
+- A small App.java that prints results
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
