@@ -61,8 +61,8 @@ public class Student {
             rset = pstmt.executeQuery();
             while (rset.next()) {
                 Major mj = new Major();
-                mj.setMajorDesc("major_desc");
-                mj.setMajorCode("major_code");
+                mj.setMajorDesc(rset.getString("major_desc"));
+                mj.setMajorCode(rset.getString("major_code"));
                 majorList.add(mj);
             }
         } // Catch any errors, then close connections etc.
@@ -160,17 +160,17 @@ public class Student {
             conn = DriverManager.getConnection("URL", "USER", "PASSWORD");
             pstmt = conn.prepareStatement(
                     "   SELECT  course_title,"
-                            + "         courseNum, "
-                            + "         courseType"
+                            + "         course_num, "
+                            + "         course_type"
                             + " FROM    courses "
                             + " WHERE   course_stu_id = ? ");
             pstmt.setInt(1, this.idNumber);
             rset = pstmt.executeQuery();
             while (rset.next()) {
                 Course crs = new Course();
-                crs.setCourseTitle("course_title");
-                crs.setCourseNum("courseNum");
-                crs.setCourseType("courseType");
+                crs.setCourseTitle(rset.getString("course_title"));
+                crs.setCourseNum(rset.getString("course_num"));
+                crs.setCourseType(rset.getString("course_type"));
                 courseList.add(crs);
             }
         } // Catch any errors, then close connections etc.
