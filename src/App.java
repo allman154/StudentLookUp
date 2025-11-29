@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Populate a list of students, with their majorsvand their courses. ");
+        System.out.println("Populate a list of students, with their majors and their courses. ");
 
         // Create the Student class and populate the full list of students and their
         // details.
